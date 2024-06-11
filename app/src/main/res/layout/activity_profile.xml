@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:autofillHints="birthDateDay"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:id="@+id/has_driver_license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have a driver license?"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/gender_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/saved_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
